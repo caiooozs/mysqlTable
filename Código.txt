@@ -1,0 +1,16 @@
+create table atvd_back(
+    aluno VARCHAR(55),
+    matricula int,
+    id_aluno int PRIMARY KEY
+)
+
+SELECT * FROM atvd_back
+DROP TABLE atvd_back
+INSERT INTO atvd_back(aluno, matricula, id_aluno) VALUES ('Caio Cesar Costa Chaves', 01518018, 001)
+INSERT INTO atvd_back(aluno, matricula, id_aluno) VALUES ('Caio Henrique Soares Siqueira', 01509846, 002)
+INSERT INTO atvd_back(aluno, matricula, id_aluno) VALUES ('Caio Nemésio de Araújo e Sousa', 01564870, 003)
+INSERT INTO atvd_back(aluno, matricula, id_aluno) VALUES ('Eliabe Wesley da Silva', 01571655, 004)
+INSERT INTO atvd_back(aluno, matricula, id_aluno) VALUES ('Cauã Victor Guedes Alves', 01588771, 005)
+INSERT INTO atvd_back(aluno, matricula, id_aluno) VALUES ('Amhos Cezar Carneio de Moraes', 01589117, 006)
+
+ALTER TABLE atvd_back ADD current_data= TO_DATE('DD-MM-YY') 
